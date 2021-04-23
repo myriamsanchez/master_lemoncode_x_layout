@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.color-base {
+    flex-grow: 2;
+}
