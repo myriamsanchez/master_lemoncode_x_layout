@@ -1,0 +1,19 @@
+@mixin background-darken($color, $times: 1) {
+  $percentage: 5%;
+  @for $index from 1 through $times {
+    .darken-#{$index} {
+      background-color: darken($color, $percentage);
+      $percentage: $percentage + 5;
+    }
+  }
+}
+
+@mixin background-lighten($color, $times: 1) {
+  $percentage: 5%;
+  @for $index from 1 through $times {
+    .lighten-#{$index} {
+      background-color: lighten($color, $percentage);
+      $percentage: $percentage + 5;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "color_change.scss";
+
+// base color
+$base-color: purple;
+$base-letter-color: white;
+$secondary-letter_color: lightgrey;
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.container-1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    @include background-darken($base-color, 4);
+    @include background-lighten($base-color, 4);
+}
+
+.color-box-text {
+    color: $secondary-letter_color;
+}
+
+.box {
+    display: flex;
+    min-height: 20vh;
+    min-width: 15vh;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: $base-color;
+    
+    &.base-color {
+        flex-grow: 2;
+        background-color: $base-color;
+        color: $base-letter-color;
+        .color-box-text {
+            color: $base-letter-color;
+        }
+    }
+}
+
+
