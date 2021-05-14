@@ -1,0 +1,11 @@
+@mixin set-bg-color($colour,  $percentage: 30%) {
+    .base-colour {
+      background-color: $colour;
+    }
+    .important-colour {
+      background-color: darken($colour, $percentage);
+    }
+    .warning-colour {
+      background-color: lighten($colour, $percentage);
+    }
+  }
