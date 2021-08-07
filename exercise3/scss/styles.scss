@@ -1,0 +1,33 @@
+$navbar-colour: darkCyan;
+
+header {
+  height: 30px;
+  background-color: white;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $navbar-colour;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.navbar-item {
+  background-color: $navbar-colour;
+  color: white;
+  cursor: pointer;
+  padding: 0 1em;
+  &:hover {
+    background-color: darken($navbar-colour, 8%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .main-container {
+      flex-direction: column;
+    }
+}
