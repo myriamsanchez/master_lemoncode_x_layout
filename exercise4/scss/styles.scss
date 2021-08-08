@@ -1,0 +1,25 @@
+body {
+  background-color: whitesmoke;
+}
+
+.main-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.card {
+  border: 2px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  padding: 1rem;
+  .header {
+    text-emphasis: center;
+  }
+  .block {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
