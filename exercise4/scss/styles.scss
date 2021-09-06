@@ -23,7 +23,7 @@ body {
     }
   }
   .title {
-  padding: 1rem;
+    padding: 1rem;
     margin: 0;
   }
   .block {
@@ -31,5 +31,23 @@ body {
     text-justify: inter-word;
     padding: 1rem;
     margin: 0;
+  }
+
+  footer {
+    padding: 1rem;
+    .publishing {
+      margin-top: 0;
+      text-align: right;
+      .date {
+        color: rgb(123, 206, 0);
+      }
+    }
+    .info-button {
+      color: white;
+      background-color: rgb(123, 206, 0);
+      width: 100%;
+      padding: 1rem;
+      border: none;
+    }
   }
 }
