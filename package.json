@@ -3,8 +3,7 @@
     "start:ex1": "parcel ./exercise1/src/index.html --open",
     "start:ex2": "parcel ./exercise2/src/index.html --open",
     "start:ex3": "parcel ./exercise3/src/index.html --open",
-    "start:ex4": "parcel ./exercise4/src/index.html --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:ex4": "parcel ./exercise4/src/index.html --open"
   },
   "devDependencies": {
     "sass": "^1.32.11"
