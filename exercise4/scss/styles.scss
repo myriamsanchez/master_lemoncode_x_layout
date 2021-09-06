@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+  font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .main-container {
@@ -28,5 +29,7 @@ body {
   .block {
     text-align: justify;
     text-justify: inter-word;
+    padding: 1rem;
+    margin: 0;
   }
 }
